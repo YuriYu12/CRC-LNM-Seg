@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+dist/
+eggs/
+.eggs/
+*.egg
+*.egg-info/
+lib/
+lib64/
+venv/
+env/
+ENV/
+.venv/
+wheels/
+dependency/
+helpers/
+
+# Logs
+wandb/
+*.ipynb_checkpoints
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sqlite
+
+# IDE
+.idea/
+.vscode/
+.history/
+
+# OS
+.DS_Store
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Config
+.env
+config.json
+settings.json
+
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.npy
+*.npz
+*.nii.gz
