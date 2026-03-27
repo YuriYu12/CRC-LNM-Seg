@@ -1,0 +1,55 @@
+diffusion_img_size: 128
+diffusion_depth_size: 128
+diffusion_num_channels: 1
+
+results_folder: model/
+results_folder_postfix: normal
+load_milestone: False
+finetune: False
+
+denoising_net: LDM
+timesteps: 1000
+train_lr: 1e-4
+batch_size: 1
+loss_type: l1  # L1/L2
+train_num_steps: 50000
+gradient_accumulate_every: 2
+save_and_sample_every: 500
+ema_decay: 0.995
+dim: 32
+amp: False
+num_samples: 2
+num_workers: 4
+use_ema: True
+
+num_res_blocks: 1
+attention_resolutions: [8] # this is not the spatial resolution but the downsampling factor
+# i.e. this corresponds to attention on spatial resolution 128 // 8 = 16
+num_heads: 8
+num_classes: 
+use_spatial_transformer: False
+transformer_depth: 1
+context_dim: 
+
+# condition
+use_mask: False
+use_multimask: False
+use_control_mask: False
+
+cond_scale: 1.0
+cond_drop_rate: 0.0
+
+# ddim
+use_ddim: False
+ddim_timesteps: 100
+ddim_eta: 0.0
+
+# sampling
+ddpm_ckpt: 
+samples: 100
+samples_folder: sample/
+samples_folder_postfix: normal
+
+# DDP
+dist: False
+local_rank: 0
