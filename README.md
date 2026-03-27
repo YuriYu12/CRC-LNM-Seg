@@ -1,6 +1,6 @@
 # CRC LNM Segmentation
 
-The official codebase for colorectal cancer lymph node metastasis segmentation leveraging generative augmentation and vascular guidance.
+The official codebase for colorectal cancer lymph node metastasis segmentation leveraging generative diffusion and vascular guidance.
 
 ## Code Structure
 ```
