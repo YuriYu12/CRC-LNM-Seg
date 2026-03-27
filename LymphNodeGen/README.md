@@ -35,5 +35,7 @@ CUDA_VISIBLE_DEVICES=0 python train/train_ddpm.py model=ddpm dataset=lnm model.u
 ## DDPM Sampling
 ```
 python sample/prepare_condition.py model=ddpm dataset=lnm model.samples=1000 model.samples_folder_postfix='prepare'
+```
+```
 CUDA_VISIBLE_DEVICES=0 python sample/sample_condition.py model=ddpm dataset=lnm dataset.root_dir='sample/LNM/prepare/image/' model.use_multimask=True model.use_control_mask=True model.use_spatial_transformer=True model.context_dim=256 model.samples=1000 model.ddpm_ckpt='model/LNM/ddpm/normal/model-100.pt'
 ```
