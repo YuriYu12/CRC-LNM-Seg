@@ -10,7 +10,15 @@ CRC-LNM-Seg/
 ├── VesselSeg/         # vessel segmentation
 └── LymphNodeSeg/      # lymph node segmentation
 ```
-Please refer to each subfolder for more details.
+*Please refer to each subfolder for more details.*
+
+
+## Requirements
+```
+conda create -n crc python=3.9.17
+conda activate crc
+pip install -r requirements.txt
+```
 
 ## Acknowledgement
 

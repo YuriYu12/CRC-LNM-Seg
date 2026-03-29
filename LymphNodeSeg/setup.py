@@ -2,12 +2,7 @@ from setuptools import setup, find_namespace_packages
 
 setup(name='nnunetv2_lnm',
       packages=find_namespace_packages(include=["nnunetv2_lnm", "nnunetv2_lnm.*"]),
-      version='2.1.1',
-      description='nnU-Net. Framework for out-of-the box biomedical image segmentation.',
-      url='https://github.com/MIC-DKFZ/nnUNet',
-      author='Helmholtz Imaging Applied Computer Vision Lab, Division of Medical Image Computing, German Cancer Research Center',
-      author_email='f.isensee@dkfz-heidelberg.de',
-      license='Apache License Version 2.0, January 2004',
+      version='1.0.0',
       python_requires=">=3.9",
       install_requires=[
           "torch>=2.0.0",

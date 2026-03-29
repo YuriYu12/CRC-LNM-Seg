@@ -831,10 +831,6 @@ if __name__ == '__main__':
     parser.add_argument("--save_root", type=str, default="Dataset000CMU")
     args = parser.parse_args()
     desired_procs = 16
-    # sometimes needs to be <= 16 to prevent soft lockup and slow responding
-    # a soft lockup is probably because of:
-    # 1) high disk IO / CPU utilization https://forums.centos.org/viewtopic.php?t=60087
-    # ...) many other possible reasons, but most probably 1)
     
     if args.dataset == "cmu":
         # cmu dataset
